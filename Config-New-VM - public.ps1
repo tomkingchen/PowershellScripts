@@ -1,7 +1,10 @@
 ﻿<#
 .SYNOPSIS
 Carry out initial configuration based on new server build checklist tasks
-
+.DESCRIPTION
+The script carries out some basic inital configurations on a newly provisioned Windows server.
+.EXAMPLE
+Config-New-VM -ServerName "vm01" -IPAddress "10.1.1.10" -DefaultGW "10.1.1.1" -DNSServers "10.1.1.3,10.1.1.4"
 #>
 param( 
 	    [Parameter(Mandatory=$false)] 
