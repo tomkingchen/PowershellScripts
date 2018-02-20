@@ -1,9 +1,9 @@
 ﻿#requires -version 3
 <#
 .SYNOPSIS
-   Query for O365 Health
+   Query for Office 365 Service Health
 .DESCRIPTION
-   Query for most recent status of a particular service & feature.
+   Query for most recent status of a particular service & feature, Exchange Online in this case. The output of this script can be fed into monitoring tool like Solarwinds Orion SAM.
 .NOTES
    Author: Tom Chen
    Creation Date: 02/19/2018
