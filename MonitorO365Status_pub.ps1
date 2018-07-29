@@ -24,7 +24,9 @@ function Convert-DateString ([String]$Date, [String[]]$Format)
 New-MyTwitterConfiguration -APIKey TKuADFNwJAf4kFAKEAPIKEY -APISecret 5F6ORB4b6eVADSFAgoM6AgDmi5YmZU1q58FAKESECRET -AccessToken 2015912SDAFtpL1LcxVB82KkEIqCNWpFAKE -AccessTokenSecret 4xJYwameZA2m8324234SDFbnwoN32kwi55mAKFAKE
 
 # Get the latest tweet
-$tweet = Get-TweetTimeline -Username 'office365status' -MaximumTweets 1
+$TimeLine = Get-TweetTimeline -UserName "office365status" -MaximumTweets 100
+$tweet = $TimeLine[0]
+
 
 # Convert twitter create time to normal time format
 $createTime = Convert-DateString -Date $tweet.created_at -Format 'ddd MMM dd HH:mm:ss zzzz yyyy'
