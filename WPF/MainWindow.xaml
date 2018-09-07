@@ -1,0 +1,32 @@
+﻿<Window x:Name="ChangeManagerWindow" x:Class="ChangeMan.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChangeMan"
+        mc:Ignorable="d"
+        Title="Change Manager" Height="350" Width="525" Background="#FF137795">
+    <Grid Margin="0,0,2,-21">
+        <Label x:Name="crnumberLB" Content="CR Number:" HorizontalAlignment="Left" Margin="17,15,0,0" VerticalAlignment="Top" Width="77" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="crnumberTBox" HorizontalAlignment="Left" Height="23" Margin="99,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" MaxLength="5"  Width="120"/>
+        <TextBlock x:Name="outputTBlock" HorizontalAlignment="Left" Margin="27,168,0,0" TextWrapping="Wrap" Text="Command Output..." VerticalAlignment="Top" Height="122" Width="465" Background="White"/>
+        <Button x:Name="crfolderBT" Content="Create CR Folder" HorizontalAlignment="Left" Margin="373,15,0,0" VerticalAlignment="Top" Width="119" RenderTransformOrigin="0.871,0.679"/>
+        <ComboBox x:Name="crlocationCBox" HorizontalAlignment="Left" Margin="99,54,0,0" VerticalAlignment="Top" Width="50" SelectedIndex="0">
+            <ComboBoxItem Content="AU"/>
+            <ComboBoxItem Content="UK"/>
+            <ComboBoxItem Content="CN"/>
+            <ComboBoxItem Content="NZ"/>
+            <ComboBoxItem Content="US"/>
+            <ComboBoxItem Content="FI"/>
+            <ComboBoxItem Content="NO"/>
+            <ComboBoxItem Content="SA"/>
+            <ComboBoxItem Content="DK"/>
+            <ComboBoxItem Content="VN"/>
+        </ComboBox>
+        <Label x:Name="crlocationLB" Content="CR Location:" HorizontalAlignment="Left" Margin="17,54,0,0" VerticalAlignment="Top" Width="77" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="initialsTB"  HorizontalAlignment="Left" Height="23" Margin="277,15,0,0" TextWrapping="Wrap" MaxLength="2" VerticalAlignment="Top" Width="40" RenderTransformOrigin="1.061,0.515"/>
+        <Label x:Name="initialsLB" Content="Initials:" HorizontalAlignment="Left" Margin="224,15,0,0" VerticalAlignment="Top" Width="48" FontWeight="Bold" Foreground="White"/>
+        <Button x:Name="reviewBT" Content="Ask for Peer Review" HorizontalAlignment="Left" Margin="27,115,0,0" VerticalAlignment="Top" Width="119" RenderTransformOrigin="0.871,0.679" />
+
+    </Grid>
+</Window>
